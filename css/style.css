@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url('../images/agecal\ bg.jpg');
+}
+h1{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 40%;
+    margin-top: 4%;
+    animation: fadeIn 5s;
+   -webkit-animation: fadeIn 5s;
+   -moz-animation: fadeIn 5s;
+   -o-animation: fadeIn 5s;
+   -ms-animation: fadeIn 5s;
+}
+.calculator h1{
+    font-size: 60px;
+}
+.calculator h5{
+    font-size: 25px;
+    font-family: 'Rajdhani', sans-serif;
+    color: goldenrod;
+    padding-left: 2%;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.input-box{
+  
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+   
+
+}
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.input-box button{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: goldenrod;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius:5px;
+    font-weight:500;
+    color: #333;
+    cursor: pointer;
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 10px;
+    cursor:pointer;
+
+}
+
+
+
+
+/* for typewrite animation */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% {  }
+  }
+
+/* for fade animation*/
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
